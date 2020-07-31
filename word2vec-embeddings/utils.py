@@ -30,7 +30,7 @@ def create_lookup_tables(words):
     """
     Create lookup tables for vocabulary
     :param words: Input list of words
-    :return: Two dictionaries, vocab_to_int, int_to_vocab
+    :return: A tuple of dicts.  The first dict....
     """
     word_counts = Counter(words)
     # sorting the words from most to least frequent in text occurrence
