@@ -90,6 +90,114 @@ This repository contains multiple projects implemented as part of Udacity's Deep
 
 [Learn more](project-face-generation/project_description_en.md)
 
+### 6. Semantic Segmentation
+
+**Overview**: Performs pixel-level classification (semantic segmentation) of road images using a Fully Convolutional Network (FCN). Focusing on road detection for autonomous vehicles, this project identifies "road" and "non-road" regions in images.
+
+**Technologies Used**:
+- Fully Convolutional Network (FCN-8)
+- Transposed Convolution
+- Skip Connections
+- Transfer Learning with pre-trained VGG-16 model
+
+**Key Features**:
+- Pixel-level road area detection
+- High-precision segmentation through encoder-decoder architecture
+- Detailed boundary detection through multi-scale feature integration
+- Applicability to autonomous driving systems
+
+[Learn more](../self-driving-nd/CarND-Semantic-Segmentation/project_description_en.md)
+
+### 7. Vehicle Detection
+
+**Overview**: Implements a pipeline to detect vehicles in video footage by combining computer vision techniques and machine learning. Uses HOG (Histogram of Oriented Gradients) features and linear SVM to identify and track vehicles in images.
+
+**Technologies Used**:
+- HOG feature extraction
+- Linear SVM classifier
+- Sliding window search
+- False positive removal using heatmaps
+
+**Key Features**:
+- Vehicle detection at multiple scales
+- Stable tracking through cross-frame integration
+- Combination of color and HOG features
+- Optimization for real-time processing
+
+[Learn more](../self-driving-nd/CarND-Vehicle-Detection/project_description_en.md)
+
+### 8. Object Detection Lab
+
+**Overview**: Builds an object detection system for autonomous driving using MobileNet and SSD (Single Shot Detection) architectures. The project covers everything from the concept of depthwise separable convolutions to utilizing pre-trained models and applying detection to video streams.
+
+**Technologies Used**:
+- MobileNet architecture (depthwise separable convolutions)
+- SSD object detection framework
+- Pre-trained TensorFlow models
+- Video stream analysis
+
+**Key Features**:
+- Computationally efficient network design
+- End-to-end object detection
+- Performance comparison of different model architectures
+- Real-time object detection implementation
+
+[Learn more](../self-driving-nd/CarND-Object-Detection-Lab/project_description_en.md)
+
+### 9. Advanced Lane Finding
+
+**Overview**: Develops a pipeline to detect lane lines on the road with high precision using computer vision techniques. Going beyond simple edge detection, it combines advanced techniques such as camera calibration, perspective transformation, color space and gradient-based thresholding, and curve fitting to build a robust lane detection system that functions effectively in various road conditions.
+
+**Technologies Used**:
+- Image processing with OpenCV
+- Camera calibration and distortion correction
+- Perspective transformation (bird's-eye view)
+- Polynomial fitting
+
+**Key Features**:
+- Robust binary thresholding combining multiple color spaces and gradients
+- Lane pixel detection using sliding window approach
+- Calculation of radius of curvature and vehicle position
+- Visualization of detection results and video processing
+
+[Learn more](../self-driving-nd/CarND-Advanced-Lane-Lines/project_description_en.md)
+
+### 10. Traffic Sign Classification
+
+**Overview**: Builds a convolutional neural network (CNN) system to automatically recognize and classify traffic signs. The model is trained on the German Traffic Sign Dataset and evaluated with real-world road sign images. Implements a critical component of autonomous driving systems for sign recognition.
+
+**Technologies Used**:
+- Deep learning with TensorFlow/Keras
+- Convolutional Neural Networks (CNNs)
+- Image preprocessing and normalization
+- Data augmentation
+
+**Key Features**:
+- Design and implementation of multi-layer CNN architecture
+- Dropout regularization to prevent overfitting
+- Performance evaluation and visualization on test images
+- Analysis of prediction confidence using softmax probabilities
+
+[Learn more](../self-driving-nd/CarND-Traffic-Sign-Classifier-Project/project_description_en.md)
+
+### 11. Behavioral Cloning
+
+**Overview**: Develops an autonomous driving system that mimics human driving behavior using deep neural networks, specifically convolutional neural networks (CNNs). The model is trained on data recorded from a user manually driving a vehicle in a simulator (camera images and steering angles), implementing an end-to-end learning approach.
+
+**Technologies Used**:
+- Deep learning with Keras
+- NVIDIA model-based CNN architecture
+- Data generators and batch processing
+- Simulator communication (SocketIO, Flask)
+
+**Key Features**:
+- End-to-end learning of human driving behavior
+- Image preprocessing (normalization, cropping)
+- Data augmentation (horizontal flipping, multiple camera utilization)
+- Real-time inference and autonomous driving
+
+[Learn more](../self-driving-nd/CarND-Behavioral-Cloning-P3/project_description_en.md)
+
 ## AWS Technologies Overview
 
 ### Amazon SageMaker
